@@ -46,7 +46,7 @@ This thesis aims to bridge the gap between advanced AI capabilities and practica
 
 ## Thesis Information
 
-*   **Author:** Jigme Dorji (34647859)
+*   **Author:** Jigme Dorji 
 *   **Degree:** Master of Information Technology (Artificial Intelligence and Data Science)
 *   **University:** Murdoch University
 *   **Submission Date:** November 2024
