@@ -28,6 +28,7 @@ Dominant Role of Genetic Markers: In the multi-modal model, genetic markers were
 
 
 **Model Architectures:**
+
 *Baseline*: Random Forest Regressor (RFR) with hyperparameter tuning.
 
 *Uni-modal*: CNN for genomic data, LSTM for environmental data.
@@ -39,4 +40,5 @@ Dominant Role of Genetic Markers: In the multi-modal model, genetic markers were
 *Evaluation Metrics*: Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and Mean Squared Error (MSE).
 
 **Impact**
+
 This thesis aims to bridge the gap between advanced AI capabilities and practical agricultural needs, enabling more data-driven, informed, and trusted decisions to enhance crop productivity and food security.
