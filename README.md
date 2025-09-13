@@ -16,9 +16,9 @@ Modern machine learning models, especially deep learning, often operate as "blac
 
 *Actionable XAI Insights*: 
 Applied various XAI techniques (including DeepSHAP and attention weights) to interpret model decisions, revealing:
-    - *Dominant Role of Genetic Markers*: In the multi-modal model, genetic markers were identified as the most impactful features for yield prediction.
+- *Dominant Role of Genetic Markers*: In the multi-modal model, genetic markers were identified as the most impactful features for yield prediction.
 
-    - *Critical Phenotypic and Environmental Factors*: Highlighted the significance of specific phenotypic traits ("Year," "Location") and early-season environmental conditions (e.g., April rainfall) in influencing crop outcomes.
+- *Critical Phenotypic and Environmental Factors*: Highlighted the significance of specific phenotypic traits ("Year," "Location") and early-season environmental conditions (e.g., April rainfall) in influencing crop outcomes.
 
 *Transparency and Trust*: The research contributes to transforming opaque AI models into transparent tools, providing valuable, interpretable insights for farmers, agricultural managers, and plant breeders to optimize resource allocation, crop management strategies, and develop more resilient crop varieties.
 
@@ -28,11 +28,11 @@ Applied various XAI techniques (including DeepSHAP and attention weights) to int
 *Dataset*: Utilized a comprehensive barley dataset from the Western Barley Genotyping Alliance (WCGA) (2014-2016), encompassing detailed genomic, phenotypic, and environmental records.
 
 *Model Architectures*
-    - *Baseline*: Random Forest Regressor (RFR) with hyperparameter tuning.
+- *Baseline*: Random Forest Regressor (RFR) with hyperparameter tuning.
 
-    - *Uni-modal*: CNN for genomic data, LSTM for environmental data.
+- *Uni-modal*: CNN for genomic data, LSTM for environmental data.
 
-    - *Hybrid*: Attention-based CNN-LSTM, fusing feature-level representations from all modalities.
+- *Hybrid*: Attention-based CNN-LSTM, fusing feature-level representations from all modalities.
 
 *XAI Techniques*: Mean Decrease in Impurity (MDI) for RFR, DeepSHAP for CNN (genomic data), and Attention Weights for LSTM (environmental data) and the hybrid model.
 
