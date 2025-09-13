@@ -1,43 +1,53 @@
-****Explainable AI for Multi-modality Crop Yield Prediction****
+# Explainable AI for Multi-modality Crop Yield Prediction
 
-This repository presents the research conducted for the Master of Information Technology (Artificial Intelligence and Data Science) thesis titled "Application of Explainable Machine Learning Methods in Predicting Crop Yield Using Multi-modality Datasets."
+This repository provides a summary of the Master of Information Technology (Artificial Intelligence and Data Science) thesis titled "Application of Explainable Machine Learning Methods in Predicting Crop Yield Using Multi-modality Datasets."
 
-**Overview**
+## Overview
 
-Modern machine learning models, especially deep learning, often operate as "black boxes," making their predictions difficult to understand. In critical sectors like agriculture, understanding why a crop yield prediction is made is crucial for building trust, enabling informed decision-making, and optimizing farming practices. This thesis explores the integration of Explainable Artificial Intelligence (XAI) with deep learning to address this challenge in crop yield prediction.
+Traditional machine learning and deep learning models, especially in complex domains like agriculture, often act as "black boxes," making their decision-making processes opaque. This lack of transparency hinders trust and limits the ability of stakeholders (farmers, researchers, policymakers) to understand and act upon predictions.
 
-**Key Contributions**
+This thesis addresses this challenge by exploring the integration of **Explainable Artificial Intelligence (XAI)** methods with deep learning to predict crop yield. The goal is not only to achieve accurate predictions but also to provide clear, interpretable insights into the underlying factors driving these predictions, particularly when leveraging diverse data types.
 
-*Multi-modality Data Integration*: Developed and evaluated models that integrate diverse data sources, including genomic (SNP markers), phenotypic (plant traits, experimental conditions), and environmental (rainfall, solar exposure, temperature) data, to achieve a comprehensive understanding of crop yield drivers.
+## Key Contributions
 
-*Novel Attention-based Hybrid Model*: Designed and implemented an Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model. This architecture leverages CNNs for spatial pattern extraction from genomic/phenotypic data and LSTMs for temporal dependencies in environmental data, with an attention mechanism to focus on the most relevant features across modalities.
+*   **Multi-modality Data Integration:** The research successfully developed and evaluated models capable of integrating heterogeneous data sources, including:
+    *   **Genomic Data:** SNP markers for genetic insights.
+    *   **Phenotypic Data:** Physical attributes and physiological features of barley plants.
+    *   **Environmental Data:** Time-series weather parameters like rainfall, solar exposure, and temperature.
+    This comprehensive integration allows for a more nuanced understanding of complex crop yield dynamics.
 
-*Enhanced Predictive Performance*: Demonstrated that the attention-based hybrid model achieved superior predictive accuracy and better generalization compared to baseline (Random Forest) and uni-modal CNN/LSTM models.
+*   **Novel Attention-based Hybrid Model:** A key innovation is the design and implementation of an **Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model**.
+    *   **CNNs** were utilized to capture spatial dependencies and intricate patterns within genomic and phenotypic data.
+    *   **LSTMs** were employed to model temporal dependencies in environmental time-series data.
+    *   An **attention mechanism** was integrated to allow the model to dynamically focus on and weigh the most relevant features across all modalities, enhancing both predictive performance and interpretability.
 
-*Actionable XAI Insights*: 
-Applied various XAI techniques (including DeepSHAP and attention weights) to interpret model decisions, revealing:
-- *Dominant Role of Genetic Markers*: In the multi-modal model, genetic markers were identified as the most impactful features for yield prediction.
+*   **Enhanced Predictive Performance:** The attention-based hybrid model demonstrated superior predictive accuracy (lower RMSE, MAE) and better generalization capabilities compared to a baseline Random Forest Regressor and individual uni-modal CNN/LSTM models.
 
-- *Critical Phenotypic and Environmental Factors*: Highlighted the significance of specific phenotypic traits ("Year," "Location") and early-season environmental conditions (e.g., April rainfall) in influencing crop outcomes.
+*   **Actionable XAI Insights:** Various XAI techniques (Mean Decrease in Impurity for Random Forest, DeepSHAP for CNN, and attention weights for LSTM/Hybrid models) were applied to interpret model outputs, yielding practical insights:
+    *   **Genetic Dominance:** Genetic markers were identified as the most significant predictors in the multi-modal context, with specific markers showing very high attention weights.
+    *   **Phenotypic Influence:** Features like "Year" and "Location" from phenotypic data were crucial, indicating the importance of time-related and geographical environmental factors.
+    *   **Critical Environmental Timestamps:** Early-season rainfall (e.g., April) was highlighted as a critical environmental factor influencing initial crop growth and overall yield, providing valuable temporal insights.
 
-*Transparency and Trust*: The research contributes to transforming opaque AI models into transparent tools, providing valuable, interpretable insights for farmers, agricultural managers, and plant breeders to optimize resource allocation, crop management strategies, and develop more resilient crop varieties.
+*   **Promoting Transparency and Trust:** By transforming opaque AI predictions into understandable explanations, this thesis empowers farmers and agricultural managers to make more informed decisions regarding crop management, resource allocation, and breeding strategies, ultimately contributing to more resilient and productive agriculture.
 
+## Methodology Highlights
 
-**Methodology Highlights**
+*   **Dataset:** Barley accession data from the Western Barley Genotyping Alliance (WCGA), spanning 2014-2016. The dataset included 30,543 high-quality SNP markers, 17 phenotypic features across 12,421 observations, and monthly environmental data.
+*   **Data Pre-processing:** Involved imputation of missing values, one-hot encoding for genomic SNP data, and conversion of categorical variables using label encoding. Environmental data was aggregated to monthly averages relevant to the crop growth cycle.
+*   **Model Architectures:**
+    *   **Baseline:** Random Forest Regressor (RFR) with hyperparameter tuning via Optuna.
+    *   **Uni-modal Models:** Separate CNN for gene data (DeepSHAP for explanation) and Attention-based LSTM for environmental data (attention weights for explanation).
+    *   **Multi-modal Hybrid Model:** Attention-based CNN and LSTM with feature-level early fusion, explained using attention weights.
+*   **Evaluation Metrics:** Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and Mean Squared Error (MSE).
 
-*Dataset*: Utilized a comprehensive barley dataset from the Western Barley Genotyping Alliance (WCGA) (2014-2016), encompassing detailed genomic, phenotypic, and environmental records.
+## Impact
 
-*Model Architectures*
-- *Baseline*: Random Forest Regressor (RFR) with hyperparameter tuning.
+This research contributes significantly to the field of precision agriculture by not only advancing the predictive capabilities of crop yield models but also by making these complex models interpretable. The insights gained can guide practical agricultural decisions, optimize breeding programs for resilience and productivity, and foster greater confidence in AI-driven agricultural solutions for a food-secure future.
 
-- *Uni-modal*: CNN for genomic data, LSTM for environmental data.
+## Thesis Information
 
-- *Hybrid*: Attention-based CNN-LSTM, fusing feature-level representations from all modalities.
-
-*XAI Techniques*: Mean Decrease in Impurity (MDI) for RFR, DeepSHAP for CNN (genomic data), and Attention Weights for LSTM (environmental data) and the hybrid model.
-
-*Evaluation Metrics*: Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and Mean Squared Error (MSE).
-
-**Impact**
-
-This thesis aims to bridge the gap between advanced AI capabilities and practical agricultural needs, enabling more data-driven, informed, and trusted decisions to enhance crop productivity and food security.
+*   **Author:** Jigme Dorji (34647859)
+*   **Degree:** Master of Information Technology (Artificial Intelligence and Data Science)
+*   **University:** Murdoch University
+*   **Submission Date:** November 2024
+*   **Supervisor:** Dr. Guanjin Wang
