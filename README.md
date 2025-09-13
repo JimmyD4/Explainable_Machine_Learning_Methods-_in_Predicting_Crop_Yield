@@ -6,7 +6,7 @@ This repository provides a summary of the Master of Information Technology (Arti
 
 Traditional machine learning and deep learning models, especially in complex domains like agriculture, often act as "black boxes," making their decision-making processes opaque. This lack of transparency hinders trust and limits the ability of stakeholders (farmers, researchers, policymakers) to understand and act upon predictions.
 
-This thesis addresses this challenge by exploring the integration of **Explainable Artificial Intelligence (XAI)** methods with deep learning to predict crop yield. The goal is not only to achieve accurate predictions but also to provide clear, interpretable insights into the underlying factors driving these predictions, particularly when leveraging diverse data types.
+This thesis addresses this challenge by exploring the integration of Explainable Artificial Intelligence (XAI) methods with deep learning to predict crop yield. The goal is not only to achieve accurate predictions but also to provide clear, interpretable insights into the underlying factors driving these predictions, particularly when leveraging diverse data types.
 
 ## Key Contributions
 
@@ -16,7 +16,7 @@ This thesis addresses this challenge by exploring the integration of **Explainab
     *   **Environmental Data:** Time-series weather parameters like rainfall, solar exposure, and temperature.
     This comprehensive integration allows for a more nuanced understanding of complex crop yield dynamics.
 
-*   **Novel Attention-based Hybrid Model:** A key innovation is the design and implementation of an **Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model**.
+*   **Novel Attention-based Hybrid Model:** A key innovation is the design and implementation of an Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model.
     *   **CNNs** were utilized to capture spatial dependencies and intricate patterns within genomic and phenotypic data.
     *   **LSTMs** were employed to model temporal dependencies in environmental time-series data.
     *   An **attention mechanism** was integrated to allow the model to dynamically focus on and weigh the most relevant features across all modalities, enhancing both predictive performance and interpretability.
@@ -42,7 +42,7 @@ This thesis addresses this challenge by exploring the integration of **Explainab
 
 ## Impact
 
-This research contributes significantly to the field of precision agriculture by not only advancing the predictive capabilities of crop yield models but also by making these complex models interpretable. The insights gained can guide practical agricultural decisions, optimize breeding programs for resilience and productivity, and foster greater confidence in AI-driven agricultural solutions for a food-secure future.
+This thesis aims to bridge the gap between advanced AI capabilities and practical agricultural needs, enabling more data-driven, informed, and trusted decisions to enhance crop productivity and foster greater confidence in AI-driven agricultural solutions.
 
 ## Thesis Information
 
