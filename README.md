@@ -16,10 +16,10 @@ This thesis explores the integration of Explainable Artificial Intelligence (XAI
     *   **Environmental Data:** Time-series weather parameters like rainfall, solar exposure, and temperature.
     This comprehensive integration allows for a more nuanced understanding of complex crop yield dynamics.
 
-*   **Novel Attention-based Hybrid Model:** A key innovation is the design and implementation of an Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model.
+*   **Attention-based Hybrid Model:** A key features is the implementation of an Attention-based Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) hybrid model.
     *   **CNNs** were utilized to capture spatial dependencies and intricate patterns within genomic and phenotypic data.
     *   **LSTMs** were employed to model temporal dependencies in environmental time-series data.
-    *   An **attention mechanism** was integrated to allow the model to dynamically focus on and weigh the most relevant features across all modalities, enhancing both predictive performance and interpretability.
+    *   An attention mechanism was integrated to allow the model to dynamically focus on and weigh the most relevant features across all modalities, enhancing both predictive performance and interpretability.
 
 *   **Enhanced Predictive Performance:** The attention-based hybrid model demonstrated superior predictive accuracy (lower RMSE, MAE) and better generalization capabilities compared to a baseline Random Forest Regressor and individual uni-modal CNN/LSTM models.
 
@@ -28,7 +28,7 @@ This thesis explores the integration of Explainable Artificial Intelligence (XAI
     *   **Phenotypic Influence:** Features like "Year" and "Location" from phenotypic data were crucial, indicating the importance of time-related and geographical environmental factors.
     *   **Critical Environmental Timestamps:** Early-season rainfall (e.g., April) was highlighted as a critical environmental factor influencing initial crop growth and overall yield, providing valuable temporal insights.
 
-*   **Promoting Transparency and Trust:** By transforming opaque AI predictions into understandable explanations, this thesis empowers farmers and agricultural managers to make more informed decisions regarding crop management, resource allocation, and breeding strategies, ultimately contributing to more resilient and productive agriculture.
+*   **Promoting Transparency and Trust:** By transforming opaque AI predictions into understandable explanations, this thesis tries to empower farmers and agricultural managers to make more informed decisions regarding crop management, resource allocation, and breeding strategies, ultimately contributing to more resilient and productive agriculture.
 
 ## Methodology Highlights
 
