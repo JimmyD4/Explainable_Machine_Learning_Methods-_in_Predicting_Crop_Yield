@@ -6,7 +6,7 @@ This repository provides a summary of the Master of Information Technology (Arti
 
 Traditional machine learning and deep learning models, especially in complex domains like agriculture, often act as "black boxes," making their decision-making processes opaque. This lack of transparency hinders trust and limits the ability of stakeholders (farmers, researchers, policymakers) to understand and act upon predictions.
 
-This thesis addresses this challenge by exploring the integration of Explainable Artificial Intelligence (XAI) methods with deep learning to predict crop yield. The goal is not only to achieve accurate predictions but also to provide clear, interpretable insights into the underlying factors driving these predictions, particularly when leveraging diverse data types.
+This thesis explores the integration of Explainable Artificial Intelligence (XAI) methods with deep learning to predict crop yield. The goal is not only to achieve accurate predictions but also to provide clear, interpretable insights into the underlying factors driving these predictions, particularly when leveraging diverse data types.
 
 ## Key Contributions
 
